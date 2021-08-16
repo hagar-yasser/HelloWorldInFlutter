@@ -6,7 +6,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 import 'package:flutter/rendering.dart';
+import 'package:hello_world_in_flutter/ActivityBrief.dart';
+import 'package:hello_world_in_flutter/objects/Activity.dart';
 import './TodoList.dart';
+import './FullActivity.dart';
+import './ActivityBrief.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,13 +19,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Trials',
+        theme: ThemeData(textTheme: TextTheme(bodyText2: GoogleFonts.pacifico(textStyle: TextStyle(color: Colors.white)),bodyText1: GoogleFonts.pacifico(textStyle: TextStyle(color: Colors.white)),subtitle1:GoogleFonts.pacifico(textStyle:TextStyle(color: Color(0xffF4F7C5),fontWeight:FontWeight.w100)))),
+        title: 'FamilyApp trial',
         home: Scaffold(
-            appBar: AppBar(
-              title: Text('ToDos'),
-              backgroundColor: Colors.purple,
-            ),
-            body: TodoList()));
+          backgroundColor: Color(0xffFBC687),
+          body: ActivityBrief(activity: Activity('eating together', 70,
+              ['eman ahmed', 'yasser abdelRaouf', 'Omar Yasser'], 1, 2)),
+        ));
   }
 }
 
