@@ -11,7 +11,7 @@ class FullActivity extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffFBC687),
+      backgroundColor: Colors.white,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -23,7 +23,7 @@ class FullActivity extends StatelessWidget {
                   child: IconButton(
                     onPressed: (){
                     Navigator.pop(context);
-                  }, icon: Icon(Icons.keyboard_arrow_left_rounded,color: Colors.white,size: 50,)),
+                  }, icon: Icon(Icons.keyboard_arrow_left_rounded,color: Color(0xffF7A440),size: 50,)),
                 )
                 ,Padding(
                   padding: const EdgeInsets.fromLTRB(8.0, 0, 0, 0),
@@ -132,7 +132,7 @@ class ListOfMembers extends StatelessWidget {
         height: 200,
         width: 200,
         child: Card(
-          color: Color(0xffAACDBE),
+          color: Colors.white,
           elevation: 8,
           child: Scrollbar(
             interactive: true,

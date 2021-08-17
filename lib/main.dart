@@ -19,12 +19,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        theme: ThemeData(textTheme: TextTheme(bodyText2: GoogleFonts.pacifico(textStyle: TextStyle(color: Colors.white)),bodyText1: GoogleFonts.pacifico(textStyle: TextStyle(color: Colors.white)),subtitle1:GoogleFonts.pacifico(textStyle:TextStyle(color: Color(0xffF4F7C5),fontWeight:FontWeight.w100)))),
+        theme: ThemeData(textTheme: TextTheme(bodyText2: GoogleFonts.pacifico(textStyle: TextStyle(color: Color(0xffF7A440))),bodyText1: GoogleFonts.pacifico(textStyle: TextStyle(color: Color(0xffF7A440))),subtitle1:GoogleFonts.pacifico(textStyle:TextStyle(color: Color(0xffF7A440),fontWeight:FontWeight.w100)))),
         title: 'FamilyApp trial',
         home: Scaffold(
-          backgroundColor: Color(0xffFBC687),
-          body: ActivityBrief(activity: Activity('eating together', 70,
-              ['eman ahmed', 'yasser abdelRaouf', 'Omar Yasser'], 1, 2)),
+          backgroundColor: Colors.white,
+          body: ActivityBrief(activity: Activity('Eating together', 70,
+              ['Eman Ahmed', 'Yasser AbdelRaouf', 'Omar Yasser'], 1, 2)),
         ));
   }
 }
